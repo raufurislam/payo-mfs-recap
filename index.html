@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payoo MFS</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="flex justify-center pt-2 bg-blue-100">
+      <div class="mockup-phone">
+        <div class="camera"></div>
+        <div class="display">
+          <div class="artboard artboard-demo phone-3 bg-green-100">
+            <!-- account balance starts -->
+            <div class="stats shadow">
+              <div class="stat">
+                <div class="stat-title">Account Balance</div>
+                <div id="account-balance" class="stat-value">9400</div>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <!-- account balance ends -->
+            <!-- add money starts -->
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+              <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Ammount</span>
+                  </label>
+                  <input
+                    id="input-add-money"
+                    type="text"
+                    placeholder="Add Money Ammount"
+                    class="input input-bordered"
+                    required
+                  />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Pin Number</span>
+                  </label>
+                  <input
+                    id="input-pin-number"
+                    type="password"
+                    placeholder="Your Pin Number"
+                    class="input input-bordered"
+                    autocomplete="off"
+                    required
+                  />
+                </div>
+                <div id="btn-add-money" class="form-control mt-6">
+                  <button class="btn btn-primary">Add Money</button>
+                </div>
+              </form>
+            </div>
+            <!-- add money ends -->
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./js/addMoney.js"></script>
+  </body>
+</html>
